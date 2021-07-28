@@ -1,0 +1,18 @@
+<button onclick="myFunction()">Average</button>
+<p id="demo"></p>
+<p><strong>click the button to see your average marks.</strong><br></br></p>
+<script>
+function myFunction() 
+{
+var marks1 = prompt("please enter your marks for biology","77.5");
+var marks2 =prompt("please enter your marks for physics","66");
+var marks3 =prompt("please enter your marks for chemistry","67");
+var marks4 =prompt("please enter your marks for English","61");
+var marks5 =prompt("please enter your marks for literature","60");
+var marks6 =prompt("please enter your marks for french","57.5");
+var totalMarks = parseInt(marks1)+parseInt(marks2)+parseInt(marks3)+parseInt(marks4)+parseInt(marks5)+parseInt(marks6);
+var average= (totalMarks/6);
+
+ 
+
+document.getElementById("demo").innerHTML = "Hello Arush, your average is "+average;
